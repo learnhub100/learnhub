@@ -1,0 +1,33 @@
+learnhub/
+├── backend/                          # Node.js + Express API
+│   ├── src/
+│   │   ├── controllers/              # Route handlers (auth, courses, etc.)
+│   │   ├── models/                   # Mongoose schemas
+│   │   ├── routes/                   # API routes
+│   │   ├── middleware/               # JWT auth, validation
+│   │   ├── utils/                    # Helpers (email, PDF gen)
+│   │   ├── config/                   # DB, Stripe, etc.
+│   │   └── app.js                    # Main app file
+│   ├── package.json
+│   ├── server.js                     # Entry point
+│   └── .env                          # Environment variables
+├── frontend/                         # Next.js app
+│   ├── components/                   # Reusable UI components
+│   │   ├── ui/                       # Buttons, modals, etc.
+│   │   ├── layout/                   # Header, footer, sidebar
+│   │   └── pages/                    # Page-specific components
+│   ├── pages/                        # Next.js pages (SSR/SSG)
+│   │   ├── index.js                  # Home
+│   │   ├── courses/                  # Courses list & detail
+│   │   ├── dashboard/                # Student dashboard
+│   │   ├── instructor/               # Instructor panel
+│   │   ├── admin/                    # Admin panel
+│   │   └── api/                      # Next.js API routes (if needed)
+│   ├── styles/                       # Tailwind config
+│   ├── public/                       # Static assets (images, icons)
+│   ├── package.json
+│   ├── next.config.js
+│   └── tailwind.config.js
+├── shared/                           # Shared types/interfaces (TypeScript optional)
+├── docs/                             # README, deployment guide
+└── README.md
